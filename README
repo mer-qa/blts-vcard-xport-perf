@@ -1,0 +1,8 @@
+Performance test suite for vcard storage.
+
+Uses Qt Contacts API to access vcard storage.
+
+Note: A warning "Variant value is a QStringList but the property's value type
+is neither CompoundType or ListType" is issued many times. This is most
+probably due to missing property.setValueType() call in
+QVersitContactExporterPrivate::encodeDisplayLabel()

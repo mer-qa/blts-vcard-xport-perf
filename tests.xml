@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testdefinition version="1.0">
+
+  <suite name="blts-vcard-xport-perf">
+
+    <set name="blts-vcard-xport-perf">
+
+      <case name="blts-vcard-xport-perf-100"
+        description="Benchmark vcard storage - 100 contacts"
+        type="Performance">
+
+        <step>/opt/tests/blts-vcard-xport-perf/blts-vcard-xport-perf -csv /tmp/blts-vcard-xport-perf-100.csv -m org.nemomobile.contacts.sqlite -d ${HOME} -n 100</step>
+
+        <get>
+          <file measurement="true">/tmp/blts-vcard-xport-perf-100.csv</file>
+        </get>
+
+      </case>
+
+      <case name="blts-vcard-xport-perf-1000"
+        description="Benchmark vcard storage - 1000 contacts"
+        type="Performance">
+
+        <step>/opt/tests/blts-vcard-xport-perf/blts-vcard-xport-perf -csv /tmp/blts-vcard-xport-perf-1000.csv -m org.nemomobile.contacts.sqlite -d ${HOME} -n 1000</step>
+
+        <get>
+          <file measurement="true">/tmp/blts-vcard-xport-perf-1000.csv</file>
+        </get>
+
+      </case>
+
+    </set>
+
+  </suite>
+
+</testdefinition>

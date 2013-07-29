@@ -1,0 +1,22 @@
+Name: blts-vcard-xport-perf
+Summary: BLTS vcard storage performance test suite
+Version: 0.0.1
+Release: 0
+License: GPLv2
+Group: Development/Testing
+URL: https://github.com/mer-qa/blts-vcard-xport-perf
+Sources:
+    - "%{name}-%{version}.tar.gz"
+PkgConfigBR:
+    - bltscommon
+    - Qt5Core
+    - Qt5Contacts
+    - Qt5Versit
+Requires:
+    - qtcontacts-sqlite-qt5
+Description: |
+    This package contains vcard storage performance tests
+Configure: none
+Builder: qmake5
+Files:
+    - "/opt/tests/blts-vcard-xport-perf/*"
