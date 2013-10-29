@@ -54,6 +54,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-/opt/tests/blts-vcard-xport-perf/*
+/opt/tests/blts-vcard-xport-perf/tests.xml
 # >> files
+%attr(2755, root, privileged) /opt/tests/blts-vcard-xport-perf/blts-vcard-xport-perf
 # << files

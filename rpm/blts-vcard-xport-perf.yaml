@@ -19,4 +19,4 @@ Description: |
 Configure: none
 Builder: qmake5
 Files:
-    - "/opt/tests/blts-vcard-xport-perf/*"
+    - "/opt/tests/blts-vcard-xport-perf/tests.xml"
