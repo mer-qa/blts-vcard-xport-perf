@@ -242,8 +242,8 @@ QList<QContact> BltsVCardXportPerf::generateContacts(int count)
         email.setEmailAddress(name.firstName() + "." + name.lastName() + "@example.com");
         contact.saveDetail(&email);
 
-        static const QList<QContactGender::GenderField> genders =
-            QList<QContactGender::GenderField>()
+        static const QList<QContactGender::GenderType> genders =
+            QList<QContactGender::GenderType>()
             << QContactGender::GenderUnspecified
             << QContactGender::GenderMale
             << QContactGender::GenderFemale;
