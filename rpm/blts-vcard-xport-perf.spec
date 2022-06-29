@@ -22,10 +22,9 @@ This package contains vcard storage performance tests
 
 %build
 %qmake5 
-make %{?jobs:-j%jobs}
+%make_build
 
 %install
-rm -rf %{buildroot}
 %qmake5_install
 
 %files
